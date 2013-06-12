@@ -1,0 +1,17 @@
+{     "author" : "ELLIOTTCABLE (http://ell.io/tt)"
+   
+,       "name" : "sjs"
+,    "version" : "1.0.0"
+,    "license" : "MIT"
+, "repository" :{"type":"git", "url":"git://github.com/ELLIOTTCABLE/SJS.git"}
+   
+,       "main" : "interpreter.js"
+
+,  "preferGlobal" : true
+,        "bin" :{"SJS":"./interpreter.js"
+               , "SJSc":"./compiler.js"}
+
+,    "scripts" :{"prepublish":"node interpreter.js compiler.sjs > compiler.js"}
+   
+,       "engines" :{"node":"~0.10.10"}
+,  "dependencies" :{"lodash":"~1.2.1"} }
